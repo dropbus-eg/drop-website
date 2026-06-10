@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Refund & Cancellation Policy | DROP</title>
+<meta name="description" content="DROP's Refund & Cancellation Policy â when you're eligible for a refund, how cancellations are handled, and how to request one.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<style>
+  .policy-hero {
+    background: var(--navy);
+    padding: 180px 5% 120px;
+    position: relative;
+    overflow: hidden;
+    color: var(--white);
+  }
+  .policy-hero-bg {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    pointer-events: none;
+    opacity: 0.15;
+  }
+  .policy-bus {
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 900px;
+    transform: rotate(-5deg);
+    filter: grayscale(100%) contrast(1.2) brightness(1.5);
+  }
+  .policy-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .policy-hero-content h1 { font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; margin-bottom: 20px; line-height: 1.1; }
+  .policy-hero-content p { font-size: 1.1rem; color: rgba(254,254,254,0.7); max-width: 600px; line-height: 1.6; }
+
+  .policy-container {
+    max-width: 900px;
+    margin: -60px auto 100px;
+    background: var(--white);
+    border-radius: 24px;
+    padding: 60px;
+    box-shadow: 0 20px 60px rgba(29,53,85,0.08);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .policy-content h3 {
+    color: var(--navy);
+    font-size: 1.4rem;
+    font-weight: 800;
+    margin: 40px 0 20px;
+  }
+  .policy-content p, .policy-content li {
+    color: rgba(29,53,85,0.7);
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+  }
+  .policy-content ul {
+    padding-left: 20px;
+    margin-bottom: 24px;
+  }
+  .policy-content li {
+    margin-bottom: 10px;
+  }
+  
+  .refund-table { width: 100%; border-collapse: collapse; margin: 30px 0; border-radius: 12px; overflow: hidden; }
+  .refund-table th { background: var(--navy); color: white; padding: 16px; text-align: left; font-weight: 700; }
+  .refund-table td { padding: 16px; border-bottom: 1px solid #E8ECF2; color: rgba(29,53,85,0.8); font-weight: 500; }
+  
+  .badge-full { background: rgba(76,175,80,0.15); color: #2e7d32; padding: 6px 12px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
+  .badge-half { background: rgba(255,152,0,0.15); color: #ed6c02; padding: 6px 12px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
+  .badge-none { background: rgba(221,81,74,0.15); color: var(--red); padding: 6px 12px; border-radius: 20px; font-weight: 700; font-size: 0.85rem; }
+  
+  @media (max-width: 768px) {
+    .policy-container { padding: 40px 30px; margin-top: -40px; }
+    .policy-bus { width: 600px; right: -200px; }
+  }
+</style>
+</head>
+<body>
+<nav id="navbar">
+    <a href="index.html" class="logo" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+    <img src="assets/logo.png" alt="DROP Logo" width="36" height="36" style="border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    <div class="logo-text">drop</div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#features">Features</a>
+    <a href="about.html">About</a>
+    <a href="drop-plus.html" style="color:var(--red); font-weight:800">Drop Plus</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html#download" class="nav-cta">Download App</a>
+  </div>
+  <div class="hamburger" onclick="openMobileMenu()" role="button" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="index.html#features" onclick="closeMobileMenu()">Features</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="drop-plus.html" onclick="closeMobileMenu()" style="color:var(--red); font-weight:800">Drop Plus</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<section class="policy-hero">
+  <div class="policy-hero-bg">
+    <img src="assets/drop-bus.png" alt="DROP Bus" class="policy-bus">
+  </div>
+  <div class="policy-hero-content reveal">
+    <div class="section-label" style="color:var(--red); background:rgba(221,81,74,0.1); padding:6px 14px; border-radius:30px; display:inline-block; margin-bottom:20px; font-weight:800; letter-spacing:1px; text-transform:uppercase; font-size:0.75rem;">Legal & Policies</div>
+    <h1>Refund & Cancellation Policy</h1>
+    <p>Transparent policies for delays, cancellations, and refunds.</p>
+  </div>
+</section>
+
+<div class="policy-container reveal">
+  <div class="policy-content">
+    <div style="font-size: 0.9rem; font-weight: 600; color: rgba(29,53,85,0.4); margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid rgba(29,53,85,0.1);">
+      Last Updated: March 2026
+    </div>
+    <h3>Refund Schedule</h3>
+      <table class="refund-table">
+        <thead><tr><th>Cancellation Time Before Trip</th><th>Refund Rate</th><th>Amount Refunded</th></tr></thead>
+        <tbody>
+          <tr><td>More than 12 hours before</td><td><span class="badge-full">100% Refund</span></td><td>Full ticket price</td></tr>
+          <tr><td>2 to 12 hours before</td><td><span class="badge-half">50% Refund</span></td><td>Half ticket price</td></tr>
+          <tr><td>Less than 2 hours before</td><td><span class="badge-none">No Refund</span></td><td>Not eligible</td></tr>
+          <tr><td>No-show (missed trip)</td><td><span class="badge-none">No Refund</span></td><td>Not eligible</td></tr>
+        </tbody>
+      </table>
+    
+    <h3>Automatic Full Refund Cases</h3>
+      <ul >
+        <li >Trip cancelled by Drop for any reason â immediate 100% refund</li>
+        <li >Bus delayed more than 30 minutes from scheduled departure</li>
+        <li >Vehicle breakdown not resolved within 90 minutes</li>
+      </ul>
+    
+    <h3>Driver No-Show</h3>
+      <ul >
+        <li >If the driver or bus fails to show up at the scheduled time â the passenger receives an immediate 100% refund of the ticket value</li>
+        <li >In addition, the passenger automatically receives their next ride for free as a Drop apology guarantee</li>
+        <li >This applies regardless of the reason for the driver's absence</li>
+      </ul>
+    
+    <h3>Late Arrival</h3>
+      <ul >
+        <li >If the bus arrives at the destination more than 15 minutes after the scheduled arrival time â the passenger receives a 50% promo code on their next trip</li>
+        <li >The promo code is sent automatically via the app or WhatsApp once the delay is registered</li>
+        <li >The code is valid for 30 days from the date of issue</li>
+      </ul>
+    
+    <h3>How to Request a Refund</h3>
+      <ul >
+        <li >Email: dropbus.eg@gmail.com</li>
+        <li >Or via "My Trips" section in the Drop app</li>
+        <li >Requests processed within 3â5 business days</li>
+        <li >Refund returned to original payment method within 7â14 business days</li>
+      </ul>
+    
+  
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="DROP" width="30" height="30" style="border-radius:6px">
+        <span>DROP</span>
+      </div>
+      <p class="footer-desc">Your journey, simplified. Executive commuting made reliable, comfortable, and affordable.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/drop__eg/" target="_blank" class="social-btn" aria-label="DROP on Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Riders</h4>
+      <ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#pricing">Pricing</a></li><li><a href="index.html#routes">Routes</a></li><li><a href="index.html#download">Download App</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <ul><li><a href="about.html">About DROP</a></li><li><a href="drop-plus.html" style="color:var(--red)">Drop Plus</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul><li><a href="contact.html">Help Center</a></li><li><a href="about.html">Safety</a></li><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms of Use</a></li><li><a href="refund.html">Refund Policy</a></li><li><a href="complaints.html">Complaints</a></li></ul>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>Â© 2026 DROP. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy</a> Â· <a href="terms.html">Terms</a> Â· <a href="cookies.html">Cookies</a></p>
+  </div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">🍪 We use cookies to enhance your experience, analyze traffic, and improve our services. By clicking "Accept", you agree to our <a href="cookies.html">Cookie Policy</a> and <a href="privacy.html">Privacy Policy</a>.</div>
+  <div class="cookie-actions">
+    <button class="btn-cookie btn-cookie-decline" onclick="declineCookies()">Decline</button>
+    <button class="btn-cookie btn-cookie-accept" onclick="acceptCookies()">Accept All</button>
+  </div>
+</div>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>

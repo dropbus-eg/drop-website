@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 - Page Not Found | DROP</title>
+<meta name="description" content="Page not found. The page you're looking for doesn't exist â head back to DROP's homepage to book your executive bus commute.">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/index.css">
+<link rel="icon" href="assets/logo.png" type="image/png">
+<style>
+  .error-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 0 5%;
+    position: relative;
+    overflow: hidden;
+  }
+  .error-code {
+    font-size: clamp(6rem, 15vw, 10rem);
+    font-weight: 900;
+    color: var(--red);
+    line-height: 1;
+    margin-bottom: 20px;
+    text-shadow: 0 10px 30px rgba(221,81,74,0.3);
+  }
+  .error-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+  .error-desc {
+    color: rgba(254,254,254,0.6);
+    font-size: 1.1rem;
+    max-width: 400px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  .btn-home {
+    background: var(--red);
+    color: var(--white);
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .btn-home:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(221,81,74,0.4);
+  }
+</style>
+</head>
+<body>
+<nav id="navbar">
+    <a href="index.html" class="logo" style="text-decoration:none; display:flex; align-items:center; gap:10px;">
+    <img src="assets/logo.png" alt="DROP Logo" width="36" height="36" style="border-radius:10px; box-shadow:0 4px 15px rgba(0,0,0,0.2);">
+    <div class="logo-text">drop</div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html#features">Features</a>
+    <a href="about.html">About</a>
+    <a href="drop-plus.html" style="color:var(--red); font-weight:800">Drop Plus</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html#download" class="nav-cta">Download App</a>
+  </div>
+  <div class="hamburger" onclick="openMobileMenu()" role="button" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="index.html" onclick="closeMobileMenu()">Home</a>
+  <a href="index.html#features" onclick="closeMobileMenu()">Features</a>
+  <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="drop-plus.html" onclick="closeMobileMenu()" style="color:var(--red); font-weight:800">Drop Plus</a>
+  <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<div class="error-page">
+  <div class="hero-bg">
+    <div class="hero-bg-layer"></div>
+    <div class="hero-grid"></div>
+  </div>
+  
+  <div style="position:relative; z-index:2">
+    <div class="error-code">404</div>
+    <div class="error-title">You seem lost...</div>
+    <div class="error-desc">The page you're looking for doesn't exist or has been moved. Let's get you back on route.</div>
+    <a href="index.html" class="btn-home">Return to Home</a>
+  </div>
+</div>
+
+<!-- COOKIE BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-text">🍪 We use cookies to enhance your experience, analyze traffic, and improve our services. By clicking "Accept", you agree to our <a href="cookies.html">Cookie Policy</a> and <a href="privacy.html">Privacy Policy</a>.</div>
+  <div class="cookie-actions">
+    <button class="btn-cookie btn-cookie-decline" onclick="declineCookies()">Decline</button>
+    <button class="btn-cookie btn-cookie-accept" onclick="acceptCookies()">Accept All</button>
+  </div>
+</div>
+
+<script src="assets/js/index.js"></script>
+</body>
+</html>
