@@ -54,19 +54,6 @@ const co=new IntersectionObserver((entries)=>{
 },{threshold:.5});
 document.querySelectorAll('[data-target]').forEach(el=>co.observe(el));
 
-// PRICING TOGGLE
-let yearly=false;
-function togglePricing(){
-  yearly=!yearly;
-  document.getElementById('priceToggle').classList.toggle('yearly',yearly);
-  document.getElementById('monthlyLabel').classList.toggle('active',!yearly);
-  document.getElementById('yearlyLabel').classList.toggle('active',yearly);
-  document.getElementById('solo-price').textContent='EGP 0';
-  document.getElementById('pro-price').textContent=yearly?'EGP 399':'EGP 499';
-  document.getElementById('solo-period').textContent='Pay per ride — no subscription';
-  document.getElementById('pro-period').textContent=yearly?'per month · billed annually':'per month';
-}
-
 // FAQ
 function toggleFAQ(q){
   const item=q.parentElement;

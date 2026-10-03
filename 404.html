@@ -68,13 +68,14 @@
   <div class="nav-links">
     <a href="index.html#features">Features</a>
     <a href="about.html">About</a>
+    <a href="schools.html">Schools</a>
     <a href="drop-plus.html" style="color:var(--red); font-weight:800">Drop Plus</a>
     <a href="contact.html">Contact</a>
     <a href="index.html#download" class="nav-cta">Download App</a>
   </div>
-  <div class="hamburger" onclick="openMobileMenu()" role="button" aria-label="Open menu" aria-expanded="false">
+  <button class="hamburger" type="button" onclick="openMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
@@ -83,6 +84,7 @@
   <a href="index.html" onclick="closeMobileMenu()">Home</a>
   <a href="index.html#features" onclick="closeMobileMenu()">Features</a>
   <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="schools.html" onclick="closeMobileMenu()">Schools</a>
   <a href="drop-plus.html" onclick="closeMobileMenu()" style="color:var(--red); font-weight:800">Drop Plus</a>
   <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
 </div>

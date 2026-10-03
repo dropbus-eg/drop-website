@@ -17,9 +17,10 @@ function submitCorp(e){
     method:'POST',
     headers:{'Content-Type':'application/json',Accept:'application/json'},
     body:JSON.stringify(Object.fromEntries(new FormData(form)))
-  }).then(r=>{if(!r.ok)throw new Error('Request failed');return r.json()}).then(()=>{
+  }).then(r=>{if(!r.ok)throw new Error('Request failed');return r.json()}).then(result=>{
+    if(result.success===false)throw new Error('Request was not accepted');
     btn.textContent='✓ Quote Request Sent!';btn.style.background='#4caf50';
-    status.textContent='Thanks — our corporate team will prepare your proposal within 24 hours.';
+    status.textContent='Thanks — your request has been sent. Our team will get back to you as soon as possible.';
     status.className='form-status success';
     form.reset();
     setTimeout(()=>{btn.textContent=original;btn.style.background='';btn.disabled=false},3000);

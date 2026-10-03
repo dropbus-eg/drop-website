@@ -24,13 +24,14 @@
   <div class="nav-links">
     <a href="index.html#features">Features</a>
     <a href="about.html">About</a>
+    <a href="schools.html">Schools</a>
     <a href="drop-plus.html" style="color:var(--red); font-weight:800">Drop Plus</a>
     <a href="contact.html">Contact</a>
     <a href="index.html#download" class="nav-cta">Download App</a>
   </div>
-  <div class="hamburger" onclick="openMobileMenu()" role="button" aria-label="Open menu" aria-expanded="false">
+  <button class="hamburger" type="button" onclick="openMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
@@ -39,6 +40,7 @@
   <a href="index.html" onclick="closeMobileMenu()">Home</a>
   <a href="index.html#features" onclick="closeMobileMenu()">Features</a>
   <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="schools.html" onclick="closeMobileMenu()">Schools</a>
   <a href="drop-plus.html" onclick="closeMobileMenu()" style="color:var(--red); font-weight:800">Drop Plus</a>
   <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
 </div>
@@ -102,10 +104,10 @@
             <div class="form-group"><label for="cf-phone">Phone (optional)</label><input id="cf-phone" name="phone" type="tel" placeholder="+20 10 0000 0000"></div>
           </div>
           <div class="form-group"><label for="cf-role">I'm a</label>
-            <select id="cf-role" name="role"><option>Rider / Passenger</option><option>Driver / Applicant</option><option>Corporate Client</option><option>Press / Media</option><option>Investor</option><option>Other</option></select>
+            <select id="cf-role" name="role"><option>Rider / Passenger</option><option>Driver / Applicant</option><option>Corporate Client</option><option>School Representative</option><option>Press / Media</option><option>Investor</option><option>Other</option></select>
           </div>
           <div class="form-group"><label for="cf-subject">Subject</label>
-            <select id="cf-subject" name="subject"><option>General Inquiry</option><option>Technical Support</option><option>Billing Question</option><option>Partnership Opportunity</option><option>Safety Concern</option><option>Complaint</option><option>Other</option></select>
+            <select id="cf-subject" name="subject"><option>General Inquiry</option><option>School Transportation</option><option>Technical Support</option><option>Billing Question</option><option>Partnership Opportunity</option><option>Safety Concern</option><option>Complaint</option><option>Other</option></select>
           </div>
           <div class="form-group"><label for="cf-message">Message</label><textarea id="cf-message" name="message" placeholder="Tell us how we can help..." required></textarea></div>
           <input type="hidden" name="_subject" value="New contact form message — DROP website">
@@ -171,7 +173,7 @@
     </div>
     <div class="footer-col">
       <h4>Company</h4>
-      <ul><li><a href="about.html">About DROP</a></li><li><a href="drop-plus.html" style="color:var(--red)">Drop Plus</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <ul><li><a href="about.html">About DROP</a></li><li><a href="schools.html">Schools</a></li><li><a href="drop-plus.html" style="color:var(--red)">Drop Plus</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
     </div>
     <div class="footer-col">
       <h4>Support</h4>

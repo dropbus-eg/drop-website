@@ -25,13 +25,14 @@
   <div class="nav-links">
     <a href="index.html#features">Features</a>
     <a href="about.html">About</a>
+    <a href="schools.html">Schools</a>
     <a href="drop-plus.html" style="color:var(--red); font-weight:800">Drop Plus</a>
     <a href="contact.html">Contact</a>
-    <a href="index.html#download" class="nav-cta">Download App</a>
+    <a href="index.html#download" class="nav-cta">Get Started</a>
   </div>
-  <div class="hamburger" onclick="openMobileMenu()" role="button" aria-label="Open menu" aria-expanded="false">
+  <button class="hamburger" type="button" onclick="openMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-menu-close" onclick="closeMobileMenu()" aria-label="Close menu">
@@ -40,6 +41,7 @@
   <a href="index.html" onclick="closeMobileMenu()">Home</a>
   <a href="index.html#features" onclick="closeMobileMenu()">Features</a>
   <a href="about.html" onclick="closeMobileMenu()">About</a>
+  <a href="schools.html" onclick="closeMobileMenu()">Schools</a>
   <a href="drop-plus.html" onclick="closeMobileMenu()" style="color:var(--red); font-weight:800">Drop Plus</a>
   <a href="contact.html" onclick="closeMobileMenu()">Contact</a>
 </div>
@@ -62,14 +64,8 @@
     <h1>Your Journey,<br><em>Simplified</em></h1>
     <p>Skip the traffic stress. DROP connects you to reliable, air-conditioned executive rides — from Alexandria to Smart Village and beyond. Book in seconds.</p>
     <div class="hero-actions">
-      <a href="https://apps.apple.com" class="btn-store btn-appstore" target="_blank">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        <div class="btn-store-text"><small>Download on the</small><strong>App Store</strong></div>
-      </a>
-      <a href="https://play.google.com" class="btn-store btn-playstore" target="_blank">
-        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
-        <div class="btn-store-text"><small>Get it on</small><strong>Google Play</strong></div>
-      </a>
+      <a href="https://apps.apple.com/us/app/drop-bus/id6804240531" class="btn-store btn-appstore" target="_blank" rel="noopener noreferrer"><div class="btn-store-text"><small>Download on the</small><strong>App Store</strong></div></a>
+      <a href="schools.html" class="btn-store btn-playstore"><div class="btn-store-text"><small>For education teams</small><strong>Explore DROP for Schools</strong></div></a>
     </div>
     <div class="hero-stats">
       <div class="stat-item"><div class="stat-num">EGP 250</div><div class="stat-label">Per Ride w/ Bundle</div></div>
@@ -136,6 +132,19 @@
       <h3>Instant Booking</h3>
       <p>Book a ride in under 10 seconds. Schedule days in advance or get a ride right now — DROP is always ready.</p>
     </div>
+  </div>
+</section>
+
+<!-- SCHOOLS -->
+<section class="school-feature" aria-labelledby="school-feature-title">
+  <div class="school-feature-inner">
+    <div class="school-feature-copy reveal">
+      <div class="section-label">DROP for Schools</div>
+      <h2 id="school-feature-title">A clearer journey from pickup to school.</h2>
+      <p>One platform connects school operations, parents and bus attendants. Plan routes, follow trips and keep student status visible along the way.</p>
+      <a href="schools.html" class="school-feature-link">Explore school transportation <span aria-hidden="true">↗</span></a>
+    </div>
+    <img src="assets/school-platform.png" alt="Illustration connecting school transport teams and parents" loading="lazy" class="school-feature-image">
   </div>
 </section>
 
@@ -228,12 +237,6 @@
     <div class="section-label">Simple Pricing</div>
     <div class="section-title">Plans for <span>every commuter</span></div>
     <div class="section-sub">Whether you ride solo or manage a whole team — there's a DROP plan built for you.</div>
-    <div class="pricing-toggle">
-      <span class="active" id="monthlyLabel">Monthly</span>
-      <div class="toggle-track" id="priceToggle" onclick="togglePricing()"><div class="toggle-thumb"></div></div>
-      <span id="yearlyLabel">Yearly</span>
-      <span class="save-badge">Save 20%</span>
-    </div>
   </div>
   <div class="pricing-grid">
     <div class="price-card reveal">
@@ -247,7 +250,7 @@
         <li><svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>In-app support chat</li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="rgba(29,53,85,.2)" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg><span style="opacity:.35">Priority booking</span></li>
       </ul>
-      <a href="#download" class="btn-price">Get Started Free</a>
+      <a href="#download" class="btn-price">Ask about booking</a>
     </div>
     <div class="price-card popular reveal">
       <div class="popular-badge">Drop Plus</div>
@@ -280,31 +283,6 @@
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials-section" id="testimonials">
-  <div class="testimonials-header reveal">
-    <div class="section-label">Real Reviews</div>
-    <div class="section-title" style="color:var(--white)">What our riders <span>love</span></div>
-  </div>
-  <div class="testimonials-track-wrap">
-    <div class="testimonials-track">
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Finally a commute that's actually reliable. I've taken DROP every day for 6 months — never been late once."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--blue)">S</div><div><div class="tcard-name">Sarah K.</div><div class="tcard-role">Marketing Director · Smart Village</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Fixed pricing sold me instantly. No surge, no surprises — just a great ride every morning. Recommended it to my whole office."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--red)">A</div><div><div class="tcard-name">Ahmed R.</div><div class="tcard-role">Software Engineer · New Cairo</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★☆</div><p class="tcard-text">"Alexandria to Smart Village daily was a nightmare before DROP. Now it's completely stress-free. Clean cars, professional drivers."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--navy-dark)">N</div><div><div class="tcard-name">Nour M.</div><div class="tcard-role">Operations Manager · 6th October</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"The corporate plan cut our monthly commute spend by 30%. The team dashboard is intuitive and support is genuinely fast."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--red)">K</div><div><div class="tcard-name">Karim T.</div><div class="tcard-role">CFO · Tech Startup, Smart Village</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"I recommended DROP to our whole department. The shared rides have become great team bonding time every single morning!"</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--blue)">L</div><div><div class="tcard-name">Lina H.</div><div class="tcard-role">HR Manager · Maadi</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Booked my first ride in literally 8 seconds. I thought it would be complicated — nope. DROP is impressively simple."</p><div class="tcard-author"><div class="tcard-avatar" style="background:#7b5ea7">O</div><div><div class="tcard-name">Omar S.</div><div class="tcard-role">UX Designer · Heliopolis</div></div></div></div>
-      <!-- Duplicates for infinite loop -->
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Finally a commute that's actually reliable. I've taken DROP every day for 6 months — never been late once."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--blue)">S</div><div><div class="tcard-name">Sarah K.</div><div class="tcard-role">Marketing Director · Smart Village</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Fixed pricing sold me instantly. No surge, no surprises — just a great ride every morning. Recommended it to my whole office."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--red)">A</div><div><div class="tcard-name">Ahmed R.</div><div class="tcard-role">Software Engineer · New Cairo</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"The corporate plan cut our monthly commute spend by 30%. The team dashboard is intuitive and support is genuinely fast."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--red)">K</div><div><div class="tcard-name">Karim T.</div><div class="tcard-role">CFO · Tech Startup, Smart Village</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"Booked my first ride in literally 8 seconds. I thought it would be complicated — nope. DROP is impressively simple."</p><div class="tcard-author"><div class="tcard-avatar" style="background:#7b5ea7">O</div><div><div class="tcard-name">Omar S.</div><div class="tcard-role">UX Designer · Heliopolis</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★☆</div><p class="tcard-text">"Alexandria to Smart Village daily was a nightmare before DROP. Now it's completely stress-free. Clean cars, professional drivers."</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--navy-dark)">N</div><div><div class="tcard-name">Nour M.</div><div class="tcard-role">Operations Manager · 6th October</div></div></div></div>
-      <div class="tcard"><div class="tcard-stars">★★★★★</div><p class="tcard-text">"I recommended DROP to our whole department. The shared rides have become great team bonding time every single morning!"</p><div class="tcard-author"><div class="tcard-avatar" style="background:var(--blue)">L</div><div><div class="tcard-name">Lina H.</div><div class="tcard-role">HR Manager · Maadi</div></div></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- FAQ -->
 <section class="faq-section" id="faq">
   <div class="faq-layout">
@@ -332,7 +310,7 @@
       </div>
       <div class="faq-item reveal">
         <div class="faq-question" onclick="toggleFAQ(this)">Can I schedule a ride in advance?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
-        <div class="faq-answer">Yes! With the Commuter Pro plan, you can schedule rides up to 14 days in advance. Perfect for early morning commutes, airport runs, or important meetings where you can't be late.</div>
+        <div class="faq-answer">Yes! With the Weekly Bundle, you can schedule rides up to 14 days in advance. Perfect for early morning commutes, airport runs, or important meetings where you can't be late.</div>
       </div>
       <div class="faq-item reveal">
         <div class="faq-question" onclick="toggleFAQ(this)">How does the corporate plan work?<div class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></div></div>
@@ -349,20 +327,13 @@
 <!-- DOWNLOAD CTA -->
 <section class="download-section" id="download">
   <div class="download-inner">
-    <div class="section-label reveal">Get Started Free</div>
+    <div class="section-label reveal">Get Started</div>
     <div class="section-title reveal">Ready to <span>DROP</span> the<br>traffic stress?</div>
-    <div class="section-sub reveal">Join 50,000+ daily commuters who've already made the switch. Download DROP now and get your first ride at 50% off.</div>
+    <div class="section-sub reveal">Get in touch for current routes, booking details and the direct app download link.</div>
     <div class="download-actions reveal">
-      <a href="https://apps.apple.com" class="btn-dl btn-dl-primary" target="_blank">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
-        <div class="btn-dl-text"><small>Download on the</small><strong>App Store</strong></div>
-      </a>
-      <a href="https://play.google.com" class="btn-dl btn-dl-secondary" target="_blank">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M3 20.5v-17c0-.83.94-1.3 1.6-.8l14 8.5c.6.37.6 1.23 0 1.6l-14 8.5c-.66.5-1.6.03-1.6-.8z"/></svg>
-        <div class="btn-dl-text"><small>Get it on</small><strong>Google Play</strong></div>
-      </a>
+      <a href="https://apps.apple.com/us/app/drop-bus/id6804240531" class="btn-dl btn-dl-primary" target="_blank" rel="noopener noreferrer"><div class="btn-dl-text"><small>Download on the</small><strong>App Store</strong></div></a>
+      <a href="https://wa.me/201287441113?text=Hello%20DROP%2C%20please%20send%20me%20the%20Android%20app%20link." class="btn-dl btn-dl-secondary" target="_blank" rel="noopener noreferrer"><div class="btn-dl-text"><small>Using Android?</small><strong>Request app link</strong></div></a>
     </div>
-    <div class="download-note reveal">Free to download · No credit card required · iOS &amp; Android</div>
   </div>
 </section>
 
@@ -385,7 +356,7 @@
     </div>
     <div class="footer-col">
       <h4>Company</h4>
-      <ul><li><a href="about.html">About DROP</a></li><li><a href="drop-plus.html" style="color:var(--red)">Drop Plus</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+      <ul><li><a href="about.html">About DROP</a></li><li><a href="schools.html">Schools</a></li><li><a href="drop-plus.html" style="color:var(--red)">Drop Plus</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
     </div>
     <div class="footer-col">
       <h4>Support</h4>

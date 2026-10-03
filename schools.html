@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DROP connects school transport teams, parents and bus attendants in one platform for route planning, live trip visibility and student status updates.">
+  <title>School Transportation | DROP</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/schools.css">
+</head>
+<body>
+  <nav id="navbar" class="scrolled" aria-label="Main navigation">
+    <a href="index.html" class="logo school-logo" aria-label="DROP home">
+      <img src="assets/logo.png" alt="" width="36" height="36">
+      <span class="logo-text">drop</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#features">Features</a>
+      <a href="about.html">About</a>
+      <a href="schools.html" aria-current="page">Schools</a>
+      <a href="drop-plus.html">Drop Plus</a>
+      <a href="contact.html">Contact</a>
+      <a href="#contact" class="nav-cta">Talk to us</a>
+    </div>
+    <button class="hamburger" type="button" onclick="openMobileMenu()" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" inert>
+    <button class="mobile-menu-close" type="button" onclick="closeMobileMenu()" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="schools.html" aria-current="page">Schools</a><a href="drop-plus.html">Drop Plus</a><a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="school-hero">
+      <div class="school-hero-image" role="img" aria-label="School bus outside a school"></div>
+      <div class="school-hero-inner">
+        <p class="school-eyebrow">DROP for schools</p>
+        <h1>School transportation,<br><span>finally connected.</span></h1>
+        <p class="school-hero-copy">Bring school operations, parents and bus attendants into one clear journey. Plan routes, follow each trip and keep student status visible from pickup to arrival.</p>
+        <div class="school-actions"><a href="#contact" class="school-button school-button-primary">Discuss your school <span aria-hidden="true">↗</span></a><a href="#how-it-works" class="school-button school-button-light">See how it works</a></div>
+      </div>
+    </section>
+
+    <section class="school-intro" aria-labelledby="school-intro-title">
+      <div class="school-container school-intro-grid">
+        <div><p class="school-kicker">One connected system</p><h2 id="school-intro-title">A clearer trip for everyone involved.</h2></div>
+        <p>Transport updates often get scattered across calls and chats. DROP gives the school, the parent app and the transportation team a shared view of the same journey.</p>
+      </div>
+      <div class="school-container audience-grid">
+        <article><span class="audience-number">01 / SCHOOL</span><h3>Plan and oversee</h3><p>Manage students, bus assignments, schedules, stops and routes from one system.</p></article>
+        <article><span class="audience-number">02 / PARENTS</span><h3>Follow the journey</h3><p>See the assigned bus, expected arrival and trip updates. Mark a student absent in the app.</p></article>
+        <article><span class="audience-number">03 / ATTENDANTS</span><h3>Account for students</h3><p>Review the student list and update boarding, absence and waiting status during the trip.</p></article>
+      </div>
+    </section>
+
+    <section class="school-flow" id="how-it-works" aria-labelledby="flow-title">
+      <div class="school-container flow-grid">
+        <div class="flow-copy"><p class="school-kicker">From planning to arrival</p><h2 id="flow-title">One workflow across every school trip.</h2><p>Each stage connects to the next, so the transport team can plan the route and keep families informed as the trip progresses.</p></div>
+        <ol class="flow-list"><li><span>01</span>Create the route</li><li><span>02</span>Assign students</li><li><span>03</span>Manage boarding</li><li><span>04</span>Track the trip</li><li><span>05</span>Confirm arrival</li></ol>
+      </div>
+    </section>
+
+    <section class="school-platform" aria-labelledby="platform-title">
+      <div class="school-container platform-grid">
+        <div class="platform-illustration"><img src="assets/school-platform.png" alt="Illustration connecting a parent, school office and transport team" loading="lazy"></div>
+        <div class="platform-copy"><p class="school-kicker">Built for daily operations</p><h2 id="platform-title">The details stay in one place.</h2><div class="platform-feature"><h3>Parent visibility</h3><p>Assigned bus, ETA, trip updates and a direct way to contact the bus team.</p></div><div class="platform-feature"><h3>School control</h3><p>Student records, parent access, bus assignments, scheduled trips and route details.</p></div><div class="platform-feature"><h3>Operational insight</h3><p>Review fleet capacity, route clusters, utilization and daily activity.</p></div></div>
+      </div>
+    </section>
+
+    <section class="school-pricing" aria-labelledby="pricing-title">
+      <div class="school-container pricing-content"><div><p class="school-kicker">Financial proposal</p><h2 id="pricing-title">Pricing that scales with your school.</h2><p>DROP's proposed fee is a share of transportation fees collected from parents by the school. The proposal has no upfront cost.</p></div><div class="school-rate-list"><div class="school-rate"><div><span>Fewer than 500</span><small>transportation students</small></div><strong>7%</strong><p>School retains 93%</p></div><div class="school-rate"><div><span>500 or more</span><small>transportation students</small></div><strong>5%</strong><p>School retains 95%</p></div></div></div>
+    </section>
+
+    <section class="school-contact" id="contact" aria-labelledby="contact-title"><div class="school-container contact-grid"><div><p class="school-kicker">Let's talk</p><h2 id="contact-title">Make the school journey easier to manage.</h2><p>Tell us about your school and transport setup. We can discuss how the platform and pricing proposal fit your needs.</p></div><div class="contact-panel"><a class="school-button school-button-primary" href="contact.html?topic=school">Send a school enquiry <span aria-hidden="true">↗</span></a><a class="school-button school-button-outline" href="https://wa.me/201287441113?text=Hello%20DROP%2C%20I%27d%20like%20to%20discuss%20school%20transportation." target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a><a class="school-email" href="mailto:dropbus.eg@gmail.com?subject=School%20transportation%20enquiry">dropbus.eg@gmail.com</a></div></div></section>
+  </main>
+
+  <footer><div class="school-container school-footer"><div class="footer-brand"><a href="index.html" aria-label="DROP home"><img src="assets/logo.png" alt="" width="36" height="36"><span>drop</span></a><p>Your journey, simplified.</p></div><div><h3>Explore</h3><a href="index.html">Home</a><a href="about.html">About</a><a href="schools.html">Schools</a><a href="corporate.html">Corporate</a></div><div><h3>Support</h3><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="complaints.html">Complaints</a></div></div><div class="school-container school-footer-bottom">© DROP <span id="year"></span> · <a href="cookies.html">Cookies</a></div></footer>
+  <script src="assets/js/schools.js"></script>
+</body>
+</html>

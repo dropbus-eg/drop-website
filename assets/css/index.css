@@ -92,6 +92,16 @@
 .feature-card.accent h3{color:var(--white)}
 .feature-card.accent p{color:rgba(254,254,254,.58)}
 
+/* SCHOOLS */
+.school-feature{background:#f5f8fa;padding:85px 5%}
+.school-feature-inner{width:min(1180px,100%);margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:6%;align-items:center}
+.school-feature-copy h2{font-size:clamp(2rem,3.6vw,3.3rem);line-height:1.12;letter-spacing:-.04em;font-weight:900;max-width:550px}
+.school-feature-copy p{margin-top:20px;max-width:510px;line-height:1.8;color:rgba(29,53,85,.7);font-size:.95rem}
+.school-feature-link{display:inline-flex;align-items:center;gap:25px;margin-top:28px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:.84rem;padding:16px 22px;border-radius:10px;transition:transform .2s,background .2s}
+.school-feature-link:hover{background:#c94440;transform:translateY(-3px)}
+.school-feature-image{width:100%;display:block;border-radius:18px}
+@media(max-width:800px){.school-feature-inner{grid-template-columns:1fr}.school-feature-image{margin-top:30px}}
+
 /* HOW IT WORKS */
 .how-section{background:var(--white)}
 .how-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
@@ -270,5 +280,5 @@
   .how-visual{order:-1;margin-bottom:40px}
   .pricing-grid{grid-template-columns:1fr}.price-card.popular{transform:scale(1);grid-column:auto}
 }
-@media(max-width:600px){.features-grid,.routes-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:20px}}
+@media(max-width:600px){.features-grid,.routes-grid{grid-template-columns:1fr}.hero-stats{flex-direction:column;gap:20px}.hero .orbit,.how-decoration{display:none}.hero-bg-layer{inset:0}.how-section{overflow:hidden}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}

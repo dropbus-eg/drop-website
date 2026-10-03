@@ -1,6 +1,10 @@
 window.addEventListener('scroll',()=>document.getElementById('navbar').classList.toggle('scrolled',scrollY>50));
 function openMobileMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden';const h=document.querySelector('.hamburger');if(h)h.setAttribute('aria-expanded','true')}
 function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow='';const h=document.querySelector('.hamburger');if(h)h.setAttribute('aria-expanded','false')}
+if(new URLSearchParams(location.search).get('topic')==='school'){
+  document.getElementById('cf-role').value='School Representative';
+  document.getElementById('cf-subject').value='School Transportation';
+}
 const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ro.unobserve(x.target)}}),{threshold:.1});
 document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
 function submitContact(e){
@@ -14,9 +18,10 @@ function submitContact(e){
     method:'POST',
     headers:{'Content-Type':'application/json',Accept:'application/json'},
     body:JSON.stringify(Object.fromEntries(new FormData(form)))
-  }).then(r=>{if(!r.ok)throw new Error('Request failed');return r.json()}).then(()=>{
+  }).then(r=>{if(!r.ok)throw new Error('Request failed');return r.json()}).then(result=>{
+    if(result.success===false)throw new Error('Request was not accepted');
     btn.textContent='✓ Message Sent!';btn.style.background='#4caf50';
-    status.textContent='Thanks — we received your message and will reply within 24 hours.';
+    status.textContent='Thanks — your message has been sent. We will get back to you as soon as possible.';
     status.className='form-status success';
     form.reset();
     setTimeout(()=>{btn.textContent=original;btn.style.background='';btn.disabled=false},3000);
