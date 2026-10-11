@@ -5,16 +5,16 @@ const text = {
     subject: 'DROP school demo enquiry', intro: 'Hello DROP, I would like to discuss a school demo.',
     name: 'Name', school: 'School', email: 'Work email', phone: 'Phone', message: 'Message',
     handoff: 'Your email app should open with the enquiry ready. Please send it from there.',
-    copied: 'Enquiry copied. Paste it into your email app and send it to founder@dropeg.com.',
-    copyFailed: 'Copy did not work. Please email founder@dropeg.com directly.'
+    copied: 'Enquiry copied. Paste it into your email app and send it to support@dropeg.com.',
+    copyFailed: 'Copy did not work. Please email support@dropeg.com directly.'
   },
   ar: {
     openMenu: 'افتح القائمة', closeMenu: 'اقفل القائمة', required: 'الخانة دي مطلوبة.', invalidEmail: 'اكتب بريد إلكتروني صحيح.',
     subject: 'طلب عرض توضيحي لدروب للمدارس', intro: 'مرحبًا دروب، أرغب في مناقشة عرض توضيحي للمدرسة.',
     name: 'الاسم', school: 'المدرسة', email: 'بريد العمل', phone: 'الهاتف', message: 'الرسالة',
     handoff: 'تطبيق البريد المفروض يفتح برسالتك جاهزة. ابعتها من هناك.',
-    copied: 'تم نسخ الرسالة. الصقها في تطبيق البريد وابعتها إلى founder@dropeg.com.',
-    copyFailed: 'النسخ ما اشتغلش. ابعت رسالة مباشرة إلى founder@dropeg.com.'
+    copied: 'تم نسخ الرسالة. الصقها في تطبيق البريد وابعتها إلى support@dropeg.com.',
+    copyFailed: 'النسخ ما اشتغلش. ابعت رسالة مباشرة إلى support@dropeg.com.'
   }
 }[lang];
 
@@ -82,7 +82,7 @@ if (form) {
     event.preventDefault();
     if (!validate()) return;
     status.textContent = text.handoff;
-    location.href = `mailto:founder@dropeg.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(enquiry())}`;
+    location.href = `mailto:support@dropeg.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(enquiry())}`;
   });
   document.getElementById('copy-enquiry').addEventListener('click', async () => {
     if (!validate()) return;
