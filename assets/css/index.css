@@ -262,7 +262,7 @@
 .btn-dl-secondary:hover{box-shadow:0 20px 50px rgba(221,81,74,.4)}
 .btn-dl-text small{display:block;font-size:.62rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;opacity:.7}
 .btn-dl-text strong{display:block;font-size:1.05rem;font-weight:800;line-height:1.2}
-.download-note{margin-top:22px;font-size:.76rem;color:rgba(29,53,85,.38);font-weight:500}
+.download-note{margin:22px auto 0;max-width:520px;font-size:.82rem;line-height:1.6;color:rgba(29,53,85,.7);font-weight:500}
 
 /* WHATSAPP — index.html pairs the WA button with a back-to-top button and
    tooltip markup that no other page has, so it overrides base.css's default
