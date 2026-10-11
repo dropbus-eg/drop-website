@@ -4,7 +4,10 @@ const text = {
     openMenu: 'Open menu', closeMenu: 'Close menu', required: 'This field is required.', invalidEmail: 'Enter a valid email address.',
     subject: 'DROP school demo enquiry', intro: 'Hello DROP, I would like to discuss a school demo.',
     name: 'Name', school: 'School', email: 'Work email', phone: 'Phone', message: 'Message',
-    handoff: 'Your email app should open with the enquiry ready. Please send it from there.',
+    sending: 'Sending your enquiry…',
+    sent: 'Your enquiry was submitted. We will reply by email.',
+    activation: 'Online delivery is being activated. Please email support@dropeg.com directly for now.',
+    sendFailed: 'We could not send your enquiry. Please email support@dropeg.com directly or copy your message below.',
     copied: 'Enquiry copied. Paste it into your email app and send it to support@dropeg.com.',
     copyFailed: 'Copy did not work. Please email support@dropeg.com directly.'
   },
@@ -12,7 +15,10 @@ const text = {
     openMenu: 'افتح القائمة', closeMenu: 'اقفل القائمة', required: 'الخانة دي مطلوبة.', invalidEmail: 'اكتب بريد إلكتروني صحيح.',
     subject: 'طلب عرض توضيحي لدروب للمدارس', intro: 'مرحبًا دروب، أرغب في مناقشة عرض توضيحي للمدرسة.',
     name: 'الاسم', school: 'المدرسة', email: 'بريد العمل', phone: 'الهاتف', message: 'الرسالة',
-    handoff: 'تطبيق البريد المفروض يفتح برسالتك جاهزة. ابعتها من هناك.',
+    sending: 'جارٍ إرسال طلبك…',
+    sent: 'تم إرسال طلبك. هنرد عليك بالبريد الإلكتروني.',
+    activation: 'الإرسال من الموقع لسه بيتفعّل. ابعت مباشرة إلى support@dropeg.com دلوقتي.',
+    sendFailed: 'ماقدرناش نبعت طلبك. ابعت مباشرة إلى support@dropeg.com أو انسخ الرسالة من الزر اللي تحت.',
     copied: 'تم نسخ الرسالة. الصقها في تطبيق البريد وابعتها إلى support@dropeg.com.',
     copyFailed: 'النسخ ما اشتغلش. ابعت رسالة مباشرة إلى support@dropeg.com.'
   }
@@ -78,11 +84,44 @@ if (form) {
     if (values.message.trim()) lines.push('', `${text.message}:`, values.message.trim());
     return lines.join('\n');
   }
-  form.addEventListener('submit', event => {
+  form.addEventListener('submit', async event => {
     event.preventDefault();
     if (!validate()) return;
-    status.textContent = text.handoff;
-    location.href = `mailto:support@dropeg.com?subject=${encodeURIComponent(text.subject)}&body=${encodeURIComponent(enquiry())}`;
+    const button = form.querySelector('.form-submit');
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    button.disabled = true;
+    form.setAttribute('aria-busy', 'true');
+    status.dataset.state = 'sending';
+    status.textContent = text.sending;
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/support@dropeg.com', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(Object.fromEntries(new FormData(form))),
+        signal: controller.signal
+      });
+      if (!response.ok) throw new Error('Request failed');
+      const result = await response.json();
+      if (result.success !== true && result.success !== 'true') {
+        if (/activat/i.test(result.message || '')) {
+          status.dataset.state = 'error';
+          status.textContent = text.activation;
+          return;
+        }
+        throw new Error('Request was not accepted');
+      }
+      status.dataset.state = 'success';
+      status.textContent = text.sent;
+      form.reset();
+    } catch (_) {
+      status.dataset.state = 'error';
+      status.textContent = text.sendFailed;
+    } finally {
+      clearTimeout(timeout);
+      button.disabled = false;
+      form.removeAttribute('aria-busy');
+    }
   });
   document.getElementById('copy-enquiry').addEventListener('click', async () => {
     if (!validate()) return;
