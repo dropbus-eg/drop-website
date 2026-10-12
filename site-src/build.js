@@ -39,7 +39,7 @@ function header(lang, page) {
 }
 function footer(lang, page) {
   const x = ctx(lang, page), l = labels[lang];
-  return `<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand">${brand(lang, x.up, x.link('home'))}<p>${l.tagline}</p></div><nav class="footer-nav" aria-label="${l.footer}"><a href="${x.link('about')}">${l.about}</a><a href="${x.link('how-it-works')}">${l.how}</a><a href="${x.link('contact')}">${l.contact}</a><a href="${x.link('privacy')}">${l.privacy}</a><a href="${x.link('terms')}">${l.terms}</a></nav><div class="footer-contact"><a href="${x.up}assets/downloads/drop-android.apk" download="DROP-Android.apk">${lang === 'en' ? 'Download Android app (APK)' : 'تحميل تطبيق أندرويد (APK)'}</a><a href="mailto:support@dropeg.com" dir="ltr">support@dropeg.com</a></div></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand">${brand(lang, x.up, x.link('home'))}<p>${l.tagline}</p></div><nav class="footer-nav" aria-label="${l.footer}"><a href="${x.link('about')}">${l.about}</a><a href="${x.link('how-it-works')}">${l.how}</a><a href="${x.link('contact')}">${l.contact}</a><a href="${x.link('privacy')}">${l.privacy}</a><a href="${x.link('terms')}">${l.terms}</a></nav><div class="footer-contact"><a href="${x.up}assets/downloads/DROP-Schools-1.0.6.apk" download="DROP-Schools-1.0.6.apk">${lang === 'en' ? 'Download Android app (APK)' : 'تحميل تطبيق أندرويد (APK)'}</a><a href="mailto:support@dropeg.com" dir="ltr">support@dropeg.com</a></div></div></footer>`;
 }
 function replaceTranslations(html, lang) {
   const t = homeCopy[lang];

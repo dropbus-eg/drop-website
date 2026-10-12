@@ -16,6 +16,6 @@ Open `http://127.0.0.1:4173/`. The root redirects to `/en/`. The local server is
 
 The Contact page submits enquiries through FormSubmit to `support@dropeg.com`; it does not book a demo automatically. The destination mailbox was activated and a test enquiry was delivered. Changing the destination requires a new email confirmation. The Privacy and Terms pages are marked draft and `noindex` pending owner review. See [legal-review-checklist.md](site-src/legal-review-checklist.md).
 
-The previous intercity site is saved at `drafts/intercity-website-2026-10-11.zip`. The supplied Android APK is available at `assets/downloads/drop-android.apk` and linked from the footer on every page as a direct download. The link makes no claim about which school roles the app supports.
+The previous intercity site is saved at `drafts/intercity-website-2026-10-11.zip`. The supplied Android APK is available at `assets/downloads/DROP-Schools-1.0.6.apk` and linked from the footer on every page as a direct download. The link makes no claim about which school roles the app supports.
 
 The `main` branch of `dropbus-eg/drop-website` deploys to the VPS through GitHub Actions. The workflow excludes `drafts/`, `site-src/`, and the old `DROP-WEBSITE/` copy from the served directory.
