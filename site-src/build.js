@@ -113,7 +113,7 @@ function contactPage(lang) {
 function legalPage(lang, page) {
   const ar=lang==='ar';
   const c=legalCopy[lang][page];
-  const sections=c.sections.map(([heading,text],i)=>`<section id="section-${i+1}"><h2>${i+1}. ${heading}</h2><p>${text}</p></section>`).join('');
+  const sections=c.sections.map(([heading,paragraphs],i)=>`<section id="section-${i+1}"><h2>${i+1}. ${heading}</h2>${(Array.isArray(paragraphs)?paragraphs:[paragraphs]).map(text=>`<p>${text}</p>`).join('')}</section>`).join('');
   const toc=c.sections.map(([heading],i)=>`<a href="#section-${i+1}">${i+1}. ${heading}</a>`).join('');
   const body=`<section class="legal-header container"><span class="draft-badge">${ar?'مسودة — في انتظار مراجعة المالك':'Draft — pending owner review'}</span><h1>${c.title}</h1><p>${c.intro}</p></section><div class="legal-layout container"><aside class="legal-toc"><h2>${ar?'المحتويات':'Contents'}</h2><nav aria-label="${ar?'محتويات الوثيقة':'Document contents'}">${toc}</nav></aside><div class="legal-content"><details class="mobile-toc"><summary>${ar?'المحتويات':'Contents'}</summary><nav>${toc}</nav></details>${sections}<div class="legal-contact"><h2>${ar?'التواصل والمراجعة':'Contact and review'}</h2><p>${ar?'للاستفسارات عن هذه المسودة:':'Questions about this draft:'} <a href="mailto:support@dropeg.com" dir="ltr">support@dropeg.com</a></p></div></div></div>`;
   return documentPage(lang,page,body,true);

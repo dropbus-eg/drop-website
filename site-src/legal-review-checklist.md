@@ -1,6 +1,6 @@
 # Legal draft review checklist
 
-The English and Arabic Privacy and Terms routes contain short public summaries drawn from the supplied unsigned school service agreement. They remain marked **Draft — pending owner review** and `noindex`. The former passenger commute policies do not describe the school platform.
+The English and Arabic Privacy and Terms routes contain expanded public drafts drawn from the supplied unsigned school service agreement, the current school website, and the owner's 90-day retention instruction. They remain marked **Draft — pending owner review** and `noindex`. The former passenger commute policies do not describe the school platform.
 
 Before publishing approved policies, confirm:
 
@@ -9,7 +9,7 @@ Before publishing approved policies, confirm:
 - An accessible privacy notice inside the parent and school apps at the point where personal data is entered, plus records of any required guardian consent.
 - The lawful basis for each use of website and school-platform data, including school-enquiry responses and children's data.
 - Hosting country, any cross-border transfers and their legal basis, all processors, and how privacy requests are handled.
-- Confirm that the stated 90-day retention from receipt of website enquiries and from entry of student records is implemented in the support mailbox, platform, and backups. Confirm how that rule interacts with active school agreements and any legally required retention.
+- Confirm that the stated 90-day retention from receipt of website enquiries and from entry of each student record is implemented in the support mailbox, platform, and backups. Define deletion timing, return/export instructions, and how that rule interacts with active school agreements and any legally required retention.
 - Whether optional cookies or analytics are deployed on the school pages.
 - The final signed school service agreement. Its dates, prices, trial terms, and operational sign-off fields are incomplete in the supplied template.
 - Any public-facing payment, cancellation, liability, or governing-law wording with appropriate legal review.

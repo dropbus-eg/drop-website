@@ -99,6 +99,7 @@
 .legal-content>section{border-top:1px solid var(--border-soft);padding:26px 0}
 .legal-content h2{font-size:22px;line-height:1.3;margin:0 0 10px}
 .legal-content p{font-size:16px;line-height:1.72;color:var(--text-secondary);margin:0}
+.legal-content p+p{margin-top:12px}
 .legal-content a{color:var(--drop-navy);font-weight:700}
 .legal-contact{background:var(--drop-mist);border-radius:16px;padding:24px;margin-top:20px}
 .legal-contact h2{font-size:20px;margin:0 0 7px}
