@@ -1,14 +1,14 @@
 # Legal draft review checklist
 
-The English and Arabic Privacy and Terms routes are marked **Draft — pending owner review** and `noindex`. Existing root policies described the former passenger commute service, so their substantive text was not reused for the school platform.
+The English and Arabic Privacy and Terms routes contain short public summaries drawn from the supplied unsigned school service agreement. They remain marked **Draft — pending owner review** and `noindex`. The former passenger commute policies do not describe the school platform.
 
 Before publishing approved policies, confirm:
 
-- The legal entity responsible for the website and school platform, and which services each document covers.
-- The actual enquiry, account, student, journey and location data handled, who can access it, and why.
-- Actual processors, hosting, sharing, retention, deletion, and rights request workflows.
-- Whether optional cookies or analytics are deployed.
-- The school service agreement and which terms belong there rather than in public website terms.
-- Any actual account, payment, liability, and governing-law terms with appropriate current legal review.
+- The legal name and contact details of the website operator, and the scope of each policy.
+- The actual platform data fields and school-approved roles, guardian consent workflow, and security controls.
+- Hosting location, all processors, retention periods, deletion process, and how privacy requests are handled.
+- Whether optional cookies or analytics are deployed on the school pages.
+- The final signed school service agreement. Its dates, prices, trial terms, and operational sign-off fields are incomplete in the supplied template.
+- Any public-facing payment, cancellation, liability, or governing-law wording with appropriate legal review.
 
-Do not remove the draft status or `noindex` until approved text replaces the review prompts.
+Do not remove the draft status or `noindex` until the summaries and operational facts are approved.
