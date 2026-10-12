@@ -87,7 +87,6 @@
 .contact-form-card .form-note a{color:var(--drop-navy);font-weight:800;text-underline-offset:3px}
 .contact-form-card .form-submit{margin-top:8px}
 .legal-header{padding-block:75px 36px;max-width:1050px}
-.draft-badge{display:inline-block;background:#fff0e9;color:#9b3932;border:1px solid #eac9c6;border-radius:30px;padding:7px 13px;font-size:12px;font-weight:800;margin-bottom:18px}
 .legal-header h1{margin-bottom:16px}
 .legal-header>p{font-size:18px;line-height:1.6;color:var(--text-secondary);max-width:760px;margin:0}
 .legal-layout{display:grid;grid-template-columns:220px minmax(0,760px);gap:7%;align-items:start;padding-bottom:95px}

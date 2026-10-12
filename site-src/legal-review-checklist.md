@@ -1,8 +1,8 @@
-# Legal draft review checklist
+# Legal operations checklist
 
-The English and Arabic Privacy and Terms routes contain expanded public drafts drawn from the supplied unsigned school service agreement, the current school website, and the owner's 90-day retention instruction. They remain marked **Draft — pending owner review** and `noindex`. The former passenger commute policies do not describe the school platform.
+The English and Arabic Privacy and Terms routes contain expanded public policies drawn from the supplied unsigned school service agreement template, the current school website, and the owner's 90-day retention instruction. The owner asked to remove public draft/review wording on 13 October 2026. The pages remain `noindex` while the operational details below are confirmed. The former passenger commute policies do not describe the school platform.
 
-Before publishing approved policies, confirm:
+Confirm the following operational details:
 
 - The legal name and contact details of the website operator, the designated data protection officer and contact details, and the scope of each policy.
 - The actual platform data fields and school-approved roles, guardian consent workflow, and security controls.
@@ -14,6 +14,6 @@ Before publishing approved policies, confirm:
 - The final signed school service agreement. Its dates, prices, trial terms, and operational sign-off fields are incomplete in the supplied template.
 - Any public-facing payment, cancellation, liability, or governing-law wording with appropriate legal review.
 
-Do not remove the draft status or `noindex` until the summaries and operational facts are approved.
+Keep this checklist internal. Remove `noindex` only after the operational facts and required legal details have been confirmed.
 
 The [Egyptian Personal Data Protection Center's privacy-notice guideline](https://www.pdpc.gov.eg/assets/pdf-data/Guidelines/Privacy%20Notice.pdf) lists the minimum notice contents, including legal basis, DPO contact, retention, indirect data sources, rights, and complaints. [FormSubmit's documentation](https://formsubmit.co/documentation) says it retains submissions for 30 days. The owner specified 90 days for the support mailbox and student records; implementation still needs verification. The [PDPC consent guideline](https://www.pdpc.gov.eg/assets/pdf-data/Guidelines/DSConsent.pdf) gives additional conditions for children's data and guardian consent.

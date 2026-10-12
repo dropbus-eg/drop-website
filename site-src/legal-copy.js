@@ -1,14 +1,14 @@
-// Public drafts based on the supplied unsigned school agreement and the current site.
-// Do not remove the draft label/noindex before the owner confirms operational facts.
+// Public legal copy based on the supplied school agreement template and current site.
+// Operational gaps are tracked privately in legal-review-checklist.md.
 module.exports = {
   ar: {
     privacy: {
       title: 'سياسة الخصوصية',
-      intro: 'توضح هذه المسودة كيف تُستخدم البيانات في موقع دروب ومنصة دروب للمدارس، ومن يحدد أغراض استخدامها، وكيف يمكن لأصحاب البيانات تقديم طلباتهم. تُقرأ مع اتفاق الخدمة المعتمد لكل مدرسة.',
+      intro: 'توضح هذه السياسة كيف تُستخدم البيانات في موقع دروب ومنصة دروب للمدارس، ومن يحدد أغراض استخدامها، وكيف يمكن لأصحاب البيانات تقديم طلباتهم. تُقرأ مع اتفاق الخدمة المعتمد لكل مدرسة.',
       sections: [
         ['نطاق السياسة والجهات المعنية', [
           'تدير شركة إكس دروب إيجي لنقل الركاب (xDROP EG) موقع دروب ونموذج التواصل. وفيما يتعلق ببيانات النقل المدرسي، تحدد المدرسة أغراض المعالجة والمستخدمين المصرح لهم، وتتعامل دروب مع البيانات لحسابها ووفق تعليماتها واتفاق الخدمة.',
-          'تشمل هذه المسودة زوار الموقع وممثلي المدارس ومستخدمي المنصة من أولياء الأمور والعاملين بالمدرسة وفريق الحافلة. إذا قدمت مدرسة إشعار خصوصية خاصاً بها، فيُرجع إليه أيضاً فيما يخص بيانات طلابها.'
+          'تشمل هذه السياسة زوار الموقع وممثلي المدارس ومستخدمي المنصة من أولياء الأمور والعاملين بالمدرسة وفريق الحافلة. إذا قدمت مدرسة إشعار خصوصية خاصاً بها، فيُرجع إليه أيضاً فيما يخص بيانات طلابها.'
         ]],
         ['بيانات استفسارات الموقع ومصدرها', [
           'عند إرسال استفسار، يجمع النموذج الاسم واسم المدرسة وبريد العمل، ويمكن إضافة رقم الهاتف ورسالة اختيارياً. نحصل على هذه البيانات منك مباشرة للرد على طلبك والتواصل بشأن الخدمة. إرسال الاستفسار لا يعني إنشاء حساب أو اشتراك.',
@@ -32,14 +32,14 @@ module.exports = {
         ]],
         ['مزودو الخدمات والإفصاح', [
           'يُرسل نموذج التواصل عبر FormSubmit إلى بريد دعم دروب. كما يحمّل الموقع خطوط العرض من Google Fonts، وقد يتصل متصفحك بخوادم Google للحصول عليها. قد يلزم الإفصاح أيضاً إذا فرضه قانون واجب التطبيق أو طلبته جهة مختصة وفق الإجراءات القانونية.',
-          'تُحسم قائمة مزودي الاستضافة والخدمات الفنية، ومواقع معالجتهم للبيانات وأي نقل عبر الحدود، في توثيق التشغيل واتفاق المدرسة قبل اعتماد هذه السياسة بصيغتها النهائية. لا نعرض في هذه المسودة بلداً أو مزوداً لم يتم التحقق منه.'
+          'للاستفسار عن مزودي الاستضافة والخدمات الفنية، أو موقع معالجة بيانات مدرسة معينة وأي نقل لها عبر الحدود، يمكن التواصل عبر البريد الوارد أدناه.'
         ]],
         ['مدد الاحتفاظ والحذف', [
-          'تُحفظ استفسارات الموقع في بريد دعم دروب لمدة 90 يوماً من استلامها. وتذكر FormSubmit في وثائقها أنها تحتفظ بنسخة من الطلب لمدة 30 يوماً. أما بيانات الطلاب في المنصة، فالمدة المحددة لهذه المسودة هي 90 يوماً من تاريخ إدخال كل سجل.',
-          'بعد المدة المعنية، تُحذف البيانات أو تُسلّم للمدرسة وفق تعليماتها المكتوبة واتفاق الخدمة، ما لم يلزم القانون الاحتفاظ بها مدة أخرى. يجب أن يشمل تنفيذ الحذف النسخ الاحتياطية والسجلات ذات الصلة وفق جدول تقني معتمد؛ وما زال التحقق من هذا التنفيذ مطلوباً قبل اعتماد المسودة.'
+          'تُحفظ استفسارات الموقع في بريد دعم دروب لمدة 90 يوماً من استلامها. وتذكر FormSubmit في وثائقها أنها تحتفظ بنسخة من الطلب لمدة 30 يوماً. أما بيانات الطلاب في المنصة، فمدة الاحتفاظ المحددة هي 90 يوماً من تاريخ إدخال كل سجل.',
+          'بعد المدة المعنية، تُحذف البيانات أو تُسلّم للمدرسة وفق تعليماتها المكتوبة واتفاق الخدمة، ما لم يلزم القانون الاحتفاظ بها مدة أخرى. ويُنسق التعامل مع النسخ الاحتياطية والسجلات ذات الصلة وفق ترتيبات الخدمة والمتطلبات القانونية.'
         ]],
         ['حماية البيانات والحوادث', [
-          'يلزم نموذج اتفاق المدرسة بحصر الوصول بحسب الأدوار، وحماية البيانات أثناء نقلها وحفظها، والمحافظة على سريتها، والتعامل مع أي حادث يمسها وإبلاغ المدرسة وفق الاتفاق والقانون. تُراجع الضوابط الفعلية ومسؤوليات الإبلاغ قبل نشر سياسة نهائية.',
+          'تحدد اتفاقات الخدمة مع المدارس ضوابط الوصول بحسب الأدوار، وحماية البيانات أثناء نقلها وحفظها، والمحافظة على سريتها، والتعامل مع أي حادث يمسها وإبلاغ المدرسة وفق الاتفاق والقانون.',
           'على المستخدم حماية بيانات دخوله، وإبلاغ المدرسة أو دروب فور ملاحظة استخدام غير مصرح به. ولا تُستخدم وسيلة التواصل العامة لإرسال قوائم طلاب أو مستندات تتضمن بياناتهم.'
         ]],
         ['حقوق أصحاب البيانات وطلبات أولياء الأمور', [
@@ -51,14 +51,14 @@ module.exports = {
           'يمكن للزائر ضبط المتصفح للحد من بعض ملفات الارتباط، لكن قد تتأثر وظائف تتطلبها الخدمة. لا يُطلب من الزائر إنشاء حساب لمجرد تصفح الصفحات العامة.'
         ]],
         ['التحديثات والتواصل والشكاوى', [
-          'قد تتغير هذه السياسة إذا تغيرت وظائف الموقع أو المنصة أو مزودو الخدمة أو المتطلبات القانونية. ستُعرض النسخة المعتمدة وتاريخ سريانها على هذه الصفحة بعد إتمام المراجعة، ويُبلّغ المستخدمون بأي تغيير جوهري بالطريقة المناسبة.',
-          'للاستفسار أو تقديم طلب خصوصية، راسل support@dropeg.com. ويمكن تقديم شكوى إلى <a href="https://www.pdpc.gov.eg/">مركز حماية البيانات الشخصية المصري</a> وفق القنوات المتاحة لديه. ما زالت بيانات مسؤول حماية البيانات وبلد الاستضافة تحتاج إلى تأكيد قبل اعتماد النص النهائي.'
+          'قد تتغير هذه السياسة إذا تغيرت وظائف الموقع أو المنصة أو مزودو الخدمة أو المتطلبات القانونية. تُنشر التحديثات على هذه الصفحة، ويُبلّغ المستخدمون بأي تغيير جوهري بالطريقة المناسبة.',
+          'للاستفسار أو تقديم طلب خصوصية، أو للسؤال عن مسؤول حماية البيانات وموقع الاستضافة، راسل support@dropeg.com. ويمكن تقديم شكوى إلى <a href="https://www.pdpc.gov.eg/">مركز حماية البيانات الشخصية المصري</a> وفق القنوات المتاحة لديه.'
         ]]
       ]
     },
     terms: {
       title: 'شروط الاستخدام',
-      intro: 'تنظم هذه المسودة استخدام موقع دروب ومنصة دروب للمدارس. يحدد اتفاق الخدمة المكتوب مع كل مدرسة التفاصيل التجارية والتشغيلية الملزمة لها، ويُرجع إليه عند اختلاف هذه المعلومات العامة مع بنوده.',
+      intro: 'تنظم هذه الشروط استخدام موقع دروب ومنصة دروب للمدارس. يحدد اتفاق الخدمة المكتوب مع كل مدرسة التفاصيل التجارية والتشغيلية الملزمة لها، ويُرجع إليه عند اختلاف هذه المعلومات العامة مع بنوده.',
       sections: [
         ['نطاق الخدمة والأطراف', [
           'توفر شركة إكس دروب إيجي لنقل الركاب (xDROP EG) موقعاً للتعريف بالخدمة وتلقي استفسارات المدارس، ومنصة برمجية لتنظيم النقل المدرسي. لا ينشئ تصفح الموقع أو إرسال نموذج التواصل عقد خدمة أو حجزاً أو التزاماً بالدفع.',
@@ -93,7 +93,7 @@ module.exports = {
           'إذا تغيرت وظيفة تؤثر جوهرياً في تشغيل المدرسة أو معالجة بياناتها، تُراجع الآثار التعاقدية والخصوصية ويُقدّم الإخطار المناسب وفق الاتفاق. لا تُفسر هذه الفقرة كوعد بتوافر مستمر دون انقطاع.'
         ]],
         ['الرسوم والمدة والإلغاء', [
-          'تُحدد الأسعار والضرائب إن وجدت، وفترات التجربة والدفع والتجديد وإنهاء الاشتراك، حصراً في عرض أو اتفاق مكتوب مع المدرسة. لا تُنشر الأسعار أو المواعيد غير المكتملة في نموذج الاتفاق المقدم كأساس لهذه المسودة.',
+          'تُحدد الأسعار والضرائب إن وجدت، وفترات التجربة والدفع والتجديد وإنهاء الاشتراك، حصراً في عرض أو اتفاق مكتوب مع المدرسة.',
           'عند انتهاء الخدمة، تُعالج بيانات المدرسة وفق اتفاقها وتعليماتها المكتوبة والمتطلبات القانونية ذات الصلة. ينبغي تنسيق تصدير ما يلزم أو إرجاعه وحذفه، وإلغاء حسابات الوصول المرتبطة بالخدمة.'
         ]],
         ['الملكية والمحتوى', [
@@ -110,11 +110,11 @@ module.exports = {
   en: {
     privacy: {
       title: 'Privacy Policy',
-      intro: 'This draft explains how information is used on the DROP website and DROP for Schools platform, who decides the purposes of its use, and how people can make privacy requests. It should be read with each school’s approved service agreement.',
+      intro: 'This policy explains how information is used on the DROP website and DROP for Schools platform, who decides the purposes of its use, and how people can make privacy requests. It should be read with each school’s approved service agreement.',
       sections: [
         ['Scope and responsible parties', [
           'xDROP EG (شركة إكس دروب إيجي لنقل الركاب) operates the DROP website and enquiry form. For school transport information, the school determines the purposes and authorised users; DROP handles that information on the school’s behalf, under its instructions and service agreement.',
-          'This draft covers website visitors, school representatives, parents, school staff and bus team users. A school’s own privacy notice should also be consulted for information about its students.'
+          'This policy covers website visitors, school representatives, parents, school staff and bus team users. A school’s own privacy notice should also be consulted for information about its students.'
         ]],
         ['Website enquiry information and its source', [
           'The enquiry form collects your name, school name and work email, and optionally your phone number and a message. We receive this information directly from you to answer and follow up on your enquiry. Sending an enquiry does not create an account or subscription.',
@@ -122,14 +122,14 @@ module.exports = {
         ]],
         ['School platform information and its sources', [
           'The school may enter a student’s name or identifier, class, parent contact details, assigned route and stop. Use of the platform may create boarding, drop-off and absence records, trip updates and bus location while a journey is underway. A parent may report an absence through the app.',
-          'The draft service agreement does not authorise routine collection of health or biometric information. Any such use would require separate assessment and arrangements before it is added to the service.'
+          'The school service agreement does not authorise routine collection of health or biometric information. Any such use would require separate assessment and arrangements before it is added to the service.'
         ]],
         ['Why information is used', [
           'Platform information supports student, route and stop lists; journey management; boarding and absence events; trip-related notifications; school monitoring; and operational reports. Enquiry information is used to reply to schools and follow up on their requests.',
           'Student information is used within the purposes of the service and the school’s approved instructions. Bus location and student records should not be used for a separate purpose without appropriate arrangements and notice.'
         ]],
         ['Legal basis and parental consent', [
-          'The school determines the legal basis on which it provides student information and operates school transport; DROP and the school must document the appropriate basis for processing within their respective roles. The draft school agreement requires written parental consent where required before a child’s information is entered.',
+          'The school determines the legal basis on which it provides student information and operates school transport; DROP and the school must document the appropriate basis for processing within their respective roles. The school service agreement requires written parental consent where required before a child’s information is entered.',
           'Consent information should clearly explain the information, purpose and recipients. The school should record required consent and handle withdrawal or objection under the law and agreement. An enquiry through this website is not consent to process a child’s information.'
         ]],
         ['Who may access information', [
@@ -138,14 +138,14 @@ module.exports = {
         ]],
         ['Service providers and disclosures', [
           'The contact form sends enquiries through FormSubmit to DROP’s support inbox. The website also loads display fonts from Google Fonts, which may cause your browser to contact Google servers. Information may also be disclosed when applicable law or a competent authority lawfully requires it.',
-          'The list of hosting and technical providers, their processing locations and any international transfers must be confirmed in operational records and the school agreement before this policy is approved. This draft does not name an unverified host or country.'
+          'For details of hosting and technical service providers, where a particular school’s information is processed or any international transfers, contact us at the address below.'
         ]],
         ['Retention and deletion', [
-          'DROP’s support inbox retains website enquiries for 90 days from receipt. FormSubmit says in its documentation that it retains a copy of a submission for 30 days. The retention period set for student information in this draft is 90 days from entry of each record.',
-          'After the relevant period, information is deleted or returned to the school under its written instructions and service agreement, unless law requires another period. Deletion must be implemented across relevant backups and records under an approved technical schedule; verification of that implementation remains necessary before this draft is approved.'
+          'DROP’s support inbox retains website enquiries for 90 days from receipt. FormSubmit says in its documentation that it retains a copy of a submission for 30 days. Student information is retained for 90 days from entry of each record.',
+          'After the relevant period, information is deleted or returned to the school under its written instructions and service agreement, unless law requires another period. Handling of relevant backups and records is coordinated under the service arrangements and applicable law.'
         ]],
         ['Security and incidents', [
-          'The draft school agreement requires role-based access, protection of information in transit and at rest, confidentiality, and handling and reporting incidents affecting data in line with the agreement and law. Actual controls and notification responsibilities must be checked before a final policy is issued.',
+          'School service agreements set out role-based access, protection of information in transit and at rest, confidentiality, and handling and reporting incidents affecting data in line with the agreement and law.',
           'Users should protect their sign-in details and promptly report suspected unauthorised access to the school or DROP. The public contact form should not be used to send student lists or documents containing student information.'
         ]],
         ['Individual rights and parent requests', [
@@ -157,14 +157,14 @@ module.exports = {
           'Visitors can adjust browser settings to limit some cookies, although that may affect features that rely on them. Browsing the public pages does not require an account.'
         ]],
         ['Changes, contact and complaints', [
-          'This policy may change as the website, platform, providers or legal requirements change. An approved version and effective date will appear here after review, with appropriate notice of material changes.',
-          'For privacy questions or requests, email support@dropeg.com. You may also complain to the <a href="https://www.pdpc.gov.eg/">Egyptian Personal Data Protection Center</a> using its available channels. The data protection officer’s details and hosting location still need confirmation before this text is finalised.'
+          'This policy may change as the website, platform, providers or legal requirements change. Updates will appear on this page, with appropriate notice of material changes.',
+          'For privacy questions or requests, including questions about the data protection officer or hosting location, email support@dropeg.com. You may also complain to the <a href="https://www.pdpc.gov.eg/">Egyptian Personal Data Protection Center</a> using its available channels.'
         ]]
       ]
     },
     terms: {
       title: 'Terms of Use',
-      intro: 'This draft governs use of the DROP website and DROP for Schools platform. Each school’s written service agreement sets out its binding commercial and operational details and should be consulted if it differs from this general information.',
+      intro: 'These terms govern use of the DROP website and DROP for Schools platform. Each school’s written service agreement sets out its binding commercial and operational details and should be consulted if it differs from this general information.',
       sections: [
         ['Service and parties', [
           'xDROP EG (شركة إكس دروب إيجي لنقل الركاب) provides a website describing the service and receiving school enquiries, and a software platform for organising school transport. Browsing the website or submitting an enquiry does not create a service contract, booking or payment obligation.',
@@ -199,7 +199,7 @@ module.exports = {
           'Where a change materially affects school operations or the handling of its information, its contractual and privacy effects should be reviewed and appropriate notice given under the agreement. This section does not promise uninterrupted availability.'
         ]],
         ['Fees, term and cancellation', [
-          'Prices, applicable taxes, trial periods, payment, renewal and subscription termination are set only in a written proposal or school agreement. Incomplete rates or dates in the supplied agreement template are not published as terms of this draft.',
+          'Prices, applicable taxes, trial periods, payment, renewal and subscription termination are set only in a written proposal or school agreement.',
           'At the end of service, school information is handled under its agreement, written instructions and applicable law. Any needed export or return, deletion and closure of service accounts should be coordinated.'
         ]],
         ['Ownership and content', [
