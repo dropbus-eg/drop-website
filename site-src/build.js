@@ -40,7 +40,7 @@ function header(lang, page) {
 }
 function footer(lang, page) {
   const x = ctx(lang, page), l = labels[lang];
-  return `<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand">${brand(lang, x.up, x.link('home'))}<p>${l.tagline}</p></div><nav class="footer-nav" aria-label="${l.footer}"><a href="${x.link('about')}">${l.about}</a><a href="${x.link('how-it-works')}">${l.how}</a><a href="${x.link('contact')}">${l.contact}</a><a href="${x.link('privacy')}">${l.privacy}</a><a href="${x.link('terms')}">${l.terms}</a></nav><div class="footer-contact"><a href="${x.up}assets/downloads/DROP-Schools-1.0.6.apk" download="DROP-Schools-1.0.6.apk">${lang === 'en' ? 'Download Android app (APK)' : 'تحميل تطبيق أندرويد (APK)'}</a><a href="mailto:support@dropeg.com" dir="ltr">support@dropeg.com</a></div></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-inner"><div class="footer-brand">${brand(lang, x.up, x.link('home'))}<p>${l.tagline}</p></div><nav class="footer-nav" aria-label="${l.footer}"><a href="${x.link('about')}">${l.about}</a><a href="${x.link('how-it-works')}">${l.how}</a><a href="${x.link('contact')}">${l.contact}</a><a href="${x.link('privacy')}">${l.privacy}</a><a href="${x.link('terms')}">${l.terms}</a></nav><div class="footer-contact"><a href="${x.up}download/">${lang === 'en' ? 'Download the app' : '????? ???????'}</a><a href="mailto:support@dropeg.com" dir="ltr">support@dropeg.com</a></div></div></footer>`;
 }
 function replaceTranslations(html, lang) {
   const t = homeCopy[lang];
@@ -148,3 +148,6 @@ fs.writeFileSync(path.join(root,'sitemap.xml'),`<?xml version="1.0" encoding="UT
 fs.writeFileSync(path.join(root,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${siteUrl}/sitemap.xml\n`,'utf8');
 fs.writeFileSync(path.join(root,'404.html'),`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Page not found | DROP for Schools</title><link rel="icon" href="assets/logo.png"><link rel="stylesheet" href="assets/css/school-home.css?v=contact-direct-1"><link rel="stylesheet" href="assets/css/school-pages.css"></head><body><main class="not-found container"><img src="assets/logo.png" alt="DROP" width="56" height="56"><p class="eyebrow">404 / PAGE NOT FOUND</p><h1>We couldn't find that page.</h1><p>Choose a place to continue. / اختر صفحة للمتابعة.</p><div><a class="button button-primary" href="en/">Home</a><a class="button button-secondary" href="en/contact/">Contact</a><a class="button button-secondary" href="ar/" lang="ar">الرئيسية</a><a class="button button-secondary" href="ar/contact/" lang="ar">تواصل معنا</a></div></main></body></html>`,'utf8');
 console.log('Built 12 localized pages.');
+
+fs.mkdirSync(path.join(root, "download"), { recursive: true });
+fs.copyFileSync(path.join(__dirname, "download.template.html"), path.join(root, "download/index.html"));

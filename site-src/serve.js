@@ -8,6 +8,8 @@ http.createServer((request,response) => {
   const url = new URL(request.url,'http://localhost');
   if (url.pathname === '/') { response.writeHead(302,{Location:'/en/'}); response.end(); return; }
   const decoded = decodeURIComponent(url.pathname);
+  if (/\.apk$/i.test(decoded)) { response.writeHead(410); response.end(); return; }
+  if (decoded === "/download") { response.writeHead(200, {"Content-Type":"text/html; charset=utf-8", "Cache-Control":"no-store"}); response.end(fs.readFileSync(path.join(root,"download/index.html"))); return; }
   if (/^\/(drafts|site-src|DROP-WEBSITE)(\/|$)/.test(decoded)) { response.writeHead(404); response.end(); return; }
   const filename = path.resolve(root,'.' + decoded);
   if (!filename.startsWith(root + path.sep)) { response.writeHead(404); response.end(); return; }
